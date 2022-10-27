@@ -11,8 +11,6 @@ app.config['JSON_AS_ASCII'] = False
 app.register_blueprint(main_blueprint)
 app.register_blueprint(loader_blueprint)
 
-app.run()
-
 
 @app.route("/uploads/<path:path>")
 def static_dir(path):
